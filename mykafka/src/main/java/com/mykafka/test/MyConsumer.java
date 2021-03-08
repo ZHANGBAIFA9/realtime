@@ -33,7 +33,7 @@ public class MyConsumer {
         props.put("group.id","1210");
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(props);
 
-//        TopicPartition tp = new TopicPartition("test", 2);
+        TopicPartition tp = new TopicPartition("test", 2);
         //消费者订阅主题
         consumer.subscribe(Arrays.asList("test"));
         //指定偏移量进行重复消费
