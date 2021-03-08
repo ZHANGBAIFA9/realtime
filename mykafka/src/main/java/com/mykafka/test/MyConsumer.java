@@ -4,6 +4,7 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
 import java.util.Arrays;
@@ -28,12 +29,15 @@ public class MyConsumer {
         props.put("key.deserializer",StringDeserializer.class.getName());
         props.put("value.deserializer",StringDeserializer.class.getName());
         //指定消费者组
-        props.put(ConsumerConfig.GROUP_ID_CONFIG,"test");
-
+//        props.put(ConsumerConfig.GROUP_ID_CONFIG,"1210");
+        props.put("group.id","1210");
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(props);
 
+//        TopicPartition tp = new TopicPartition("test", 2);
         //消费者订阅主题
         consumer.subscribe(Arrays.asList("test"));
+        //指定偏移量进行重复消费
+//        consumer.seek(tp,20);
 
         while(true){
             ConsumerRecords<String, String> consumerRecords = consumer.poll(100);
