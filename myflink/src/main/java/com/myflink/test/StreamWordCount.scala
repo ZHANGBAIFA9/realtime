@@ -15,7 +15,6 @@ object StreamWordCount {
   def main(args: Array[String]): Unit = {
     //创建流处理的执行环境
     val env:StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
-
     //接收一个socket文本流
     val inputDataStream:DataStream[String] = env.socketTextStream("127.0.0.1",7777)
 
