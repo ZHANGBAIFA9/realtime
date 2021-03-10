@@ -17,7 +17,6 @@ object StreamWordCount {
     val env:StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
     //接收一个socket文本流
     val inputDataStream:DataStream[String] = env.socketTextStream("127.0.0.1",7777)
-
     //进行转换处理统计
     val resultDataStream:DataStream[(String,Int)] = inputDataStream
       .flatMap(_.split(" ")) //压扁切割
