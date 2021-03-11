@@ -15,6 +15,7 @@ public class MaoPaoSort {
             System.out.print(des+"\t");
         }
     }
+    //比较交换
     public static int[] sortBy(int[] arr){
         int len = arr.length ;
         boolean flag ;
