@@ -12,7 +12,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
   * @Author ZHANGBAIFA
   * @Date 2021/3/25 14:28
   * @Description:
-  *              scala2.12与2.11不同点 DataFrame 直接调foreach会报错
+  *              scala2.12与2.11：2.11 DataFrame 直接调foreach会报错
   */
 object Test {
   def main(args: Array[String]): Unit = {
