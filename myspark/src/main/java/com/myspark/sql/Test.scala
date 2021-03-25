@@ -26,7 +26,6 @@ object Test {
         val rows = df.rdd.collect()
         rows.foreach(println)
 
-
 //    val spark = SparkSession.builder().appName("sparkSQL").master("local[*]").getOrCreate()
 //    val url = "jdbc:mysql://127.0.0.1:3306/ceshi?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false"
 //    val table = "cs"
