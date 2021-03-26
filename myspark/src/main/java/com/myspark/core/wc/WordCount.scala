@@ -2,7 +2,6 @@ package com.myspark.core.wc
 
 import org.apache.spark.rdd.{HadoopRDD, RDD}
 import org.apache.spark.{SparkConf, SparkContext}
-
 /**
   * @Version 1.0
   * @Author ZHANGBAIFA
