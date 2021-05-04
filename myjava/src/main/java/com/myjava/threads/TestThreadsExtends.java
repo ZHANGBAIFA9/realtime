@@ -4,7 +4,7 @@ package com.myjava.threads;
  * @Version 1.0
  * @Author ZHANGBAIFA
  * @Date 2021/4/28 18:17
- * @Description:
+ * @Description:      线程创建方式-：继承Thread
  */
 public class TestThreadsExtends {
     public static void main(String[] args) {

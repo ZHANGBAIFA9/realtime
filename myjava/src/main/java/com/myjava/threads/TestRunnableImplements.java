@@ -4,7 +4,7 @@ package com.myjava.threads;
  * @Version 1.0
  * @Author ZHANGBAIFA
  * @Date 2021/5/4 12:45
- * @Description:
+ * @Description: 线程创建方式二：实现Runnable接口
  */
 public class TestRunnableImplements {
     public static void main(String[] args) {
