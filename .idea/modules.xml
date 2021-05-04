@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/myflink/myflink.iml" filepath="$PROJECT_DIR$/myflink/myflink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myjava/myjava.iml" filepath="$PROJECT_DIR$/myjava/myjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/mykafka/mykafka.iml" filepath="$PROJECT_DIR$/mykafka/mykafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspark/myspark.iml" filepath="$PROJECT_DIR$/myspark/myspark.iml" />
       <module fileurl="file://$PROJECT_DIR$/realtime.iml" filepath="$PROJECT_DIR$/realtime.iml" />
     </modules>
   </component>

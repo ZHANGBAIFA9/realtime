@@ -7,12 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myflink" />
+        <module name="myjava" />
         <module name="mykafka" />
+        <module name="myspark" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="myflink" target="1.8" />
+      <module name="myjava" target="1.8" />
       <module name="mykafka" target="1.8" />
+      <module name="myspark" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

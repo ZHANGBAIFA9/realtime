@@ -15,6 +15,7 @@ public class KuaiPaiSort {
         }
 
     }
+
     public static void sortBy(int[] arr , int left , int rigth){
         //
         if(arr == null || arr.length == 0){
@@ -30,11 +31,9 @@ public class KuaiPaiSort {
         int r = rigth ;
         //左边 ！= 右边进入循环
         while(l != r){
-
             while(arr[r] >= key && l < r){
                 r-- ;
             }
-
             while(arr[l]<key && l < r){
                 l++ ;
             }

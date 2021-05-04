@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/myflink/pom.xml" />
         <option value="$PROJECT_DIR$/mykafka/pom.xml" />
+        <option value="$PROJECT_DIR$/myjava/pom.xml" />
+        <option value="$PROJECT_DIR$/myspark/pom.xml" />
       </list>
     </option>
   </component>

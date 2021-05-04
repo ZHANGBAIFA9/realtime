@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
+import java.util.ArrayList;
 
 /**
  * @Version 1.0
@@ -7,4 +7,14 @@ package PACKAGE_NAME;
  * @Description:
  */
 public class Test {
+    public static void main(String[] args) {
+        ArrayList<Person> personArrayList = new ArrayList<>();
+        Person person = new Person();
+        for(int i = 0 ; i < 10 ;i++){
+            person.setName("zhangsan");
+            person.setAge(2);
+            personArrayList.add(person);
+        }
+        System.out.println(personArrayList.get(0)+""+personArrayList.get(2));
+    }
 }

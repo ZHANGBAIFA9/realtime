@@ -33,9 +33,10 @@ public class MyConsumer {
         props.put("group.id","1210");
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(props);
 
-        TopicPartition tp = new TopicPartition("test", 2);
+        //消费指定分区
+//        TopicPartition tp = new TopicPartition("test0", 2);
         //消费者订阅主题
-        consumer.subscribe(Arrays.asList("test"));
+        consumer.subscribe(Arrays.asList("test0"));
         //指定偏移量进行重复消费
 //        consumer.seek(tp,20);
 
@@ -54,6 +55,5 @@ public class MyConsumer {
             //手动提交偏移量，异步提交，失败不进行提交
             //consumer.commitAsync();
         }
-
     }
 }
