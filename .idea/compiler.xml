@@ -11,8 +11,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="myflink" target="1.5" />
-      <module name="mykafka" target="1.5" />
+      <module name="myflink" target="1.8" />
+      <module name="mykafka" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
