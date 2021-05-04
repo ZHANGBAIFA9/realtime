@@ -4,7 +4,7 @@ package com.myjava.threads;
  * @Version 1.0
  * @Author ZHANGBAIFA
  * @Date 2021/5/4 14:31
- * @Description:
+ * @Description:    线程通信之三种方法应用wait()、notify()、notifyAll()
  */
 public class CommunicationTest {
     public static void main(String[] args) {
