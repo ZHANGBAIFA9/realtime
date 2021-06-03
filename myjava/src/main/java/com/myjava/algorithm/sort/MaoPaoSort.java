@@ -1,4 +1,4 @@
-package com.myjava.suanfa.sort;
+package com.myjava.algorithm.sort;
 
 /**
  * @Version 1.0

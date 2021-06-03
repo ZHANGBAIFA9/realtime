@@ -6,7 +6,7 @@ package com.myjava.designModel;
  * @Date 2021/5/4 12:59
  * @Description: 懒汉式，单例模式样例，线程安全
  */
-public class SingleTest {
+public class SingleTestL {
     public static void main(String[] args) {
         Bank b1 = Bank.getInstance();
         Bank b2 = Bank.getInstance();
@@ -16,7 +16,7 @@ public class SingleTest {
 class Bank{
     //
     private Bank(){}
-    private static Bank instance = null ;
+    private volatile static Bank instance = null ;
     //线程不安全，多个线程同时进来
 //    public static Bank getInstance(){
 //        if(instance == null){

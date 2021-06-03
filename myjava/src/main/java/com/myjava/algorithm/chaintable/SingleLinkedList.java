@@ -1,4 +1,4 @@
-package com.myjava.suanfa.chaintable;
+package com.myjava.algorithm.chaintable;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package com.myjava.suanfa.tree;
+package com.myjava.algorithm.tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
